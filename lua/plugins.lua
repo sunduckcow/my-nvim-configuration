@@ -27,26 +27,15 @@ return packer.startup(function(use)
   -- packer plugin :)
   use 'wbthomason/packer.nvim'
 
+  -- lua functions for other plugins
+  use 'nvim-lua/plenary.nvim'
+
   -- colorscheme
   use 'morhetz/gruvbox'
 
   -- Which key plugin
   -- TODO: move its configuration somewhere else
-  use {
-    "folke/which-key.nvim",
-    config = function()
-      require("which-key").setup {
-          window = {
-            border = 'single',
-             padding = {2, 2, 2, 2},
-             margin  = {0, 10, 0, 6}
-          }
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      }
-    end
-  }
+  use { "folke/which-key.nvim", config = function() require("which-key").setup { window = { border = 'single' } }; end }
 
   -- integration w/ tmux + C-[h,j,k,l] for jumping between splits
   use 'christoomey/vim-tmux-navigator' 
@@ -67,8 +56,13 @@ return packer.startup(function(use)
   -- idk check documentation
   -- use 'vim-scripts/ReplaceWithRegister'
   
-  -- coming soon
-  -- use 'numToStr/Comment.nvim'
+  -- easy comments 
+  -- use gcc for comment line 
+  use 'numToStr/Comment.nvim'
+  -- use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
+
+  -- file explorer
+  use 'nvim-tree/nvim-tree.lua'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
