@@ -28,3 +28,7 @@ key.set('n', '<leader>tp', ':tabp<Cr>')
 
 -- vim-maximizer
 key.set('n', '<leader>sm', ':MaximizerToggle<CR>')
+
+-- nvim-tree
+key.set('n', '<leader>e', ':NvimTreeToggle<CR>')
+
