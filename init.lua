@@ -6,3 +6,4 @@ require('plugins')
 -- plugins
 require('plugins.comment')
 require('plugins.nvim-tree')
+require('plugins.lualine')

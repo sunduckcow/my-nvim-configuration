@@ -67,6 +67,9 @@ return packer.startup(function(use)
   -- icons
   use 'kyazdani42/nvim-web-devicons'
 
+  -- statusline
+  use 'nvim-lualine/lualine.nvim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
