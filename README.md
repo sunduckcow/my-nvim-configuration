@@ -3,4 +3,6 @@
 
 installation 
 
+```console
 clone https://github.com/sunduckcow/my-nvim-configuration.git nvim ~/.config/nvim
+```
