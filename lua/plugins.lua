@@ -24,8 +24,14 @@ if not status then
 end
 
 return packer.startup(function(use)
+  -- packer plugin :)
   use 'wbthomason/packer.nvim'
+
+  -- colorscheme
   use 'morhetz/gruvbox'
+
+  -- Which key plugin
+  -- TODO: move its configuration somewhere else
   use {
     "folke/which-key.nvim",
     config = function()
@@ -41,11 +47,28 @@ return packer.startup(function(use)
       }
     end
   }
-  use 'christoomey/vim-tmux-navigator' -- integration w/ tmux + C-[h,j,k,l] for jumping between splits
+
+  -- integration w/ tmux + C-[h,j,k,l] for jumping between splits
+  use 'christoomey/vim-tmux-navigator' 
+
+  -- split maximizer
   use 'szw/vim-maximizer'
-  -- My plugins here
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
+
+  -- essentioal plugins
+
+  -- more actions with brackets
+  -- test   -> ysw' -> 'test'
+  -- 'test' -> ds'  -> test
+  -- 'test' -> cs'" -> "test"
+  -- also suppurts {}
+  -- 'test' -> cs'{ -> { test }
+  use 'tpope/vim-surround'
+
+  -- idk check documentation
+  -- use 'vim-scripts/ReplaceWithRegister'
+  
+  -- coming soon
+  -- use 'numToStr/Comment.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
