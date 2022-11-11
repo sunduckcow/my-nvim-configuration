@@ -70,6 +70,10 @@ return packer.startup(function(use)
   -- statusline
   use 'nvim-lualine/lualine.nvim'
 
+  -- telescope for fuzzy finding
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use { 'nvim-telescope/telescope.nvim', branch = '0.1.x' }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
