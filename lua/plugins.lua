@@ -26,21 +26,21 @@ end
 return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'morhetz/gruvbox'
---  use {
---    "folke/which-key.nvim",
---    config = function()
---      require("which-key").setup {
---          window = {
---            border = 'single',
---             padding = {2, 2, 2, 2},
---             margin  = {0, 10, 0, 6}
---          }
---        -- your configuration comes here
---        -- or leave it empty to use the default settings
---        -- refer to the configuration section below
---      }
---    end
---  }
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      require("which-key").setup {
+          window = {
+            border = 'single',
+             padding = {2, 2, 2, 2},
+             margin  = {0, 10, 0, 6}
+          }
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
