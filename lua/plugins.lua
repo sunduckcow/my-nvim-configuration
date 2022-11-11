@@ -42,6 +42,7 @@ return packer.startup(function(use)
     end
   }
   use 'christoomey/vim-tmux-navigator' -- integration w/ tmux + C-[h,j,k,l] for jumping between splits
+  use 'szw/vim-maximizer'
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'

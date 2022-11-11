@@ -23,3 +23,8 @@ key.set('n', '<leader>to', ':tabnew<CR>')
 key.set('n', '<leader>tx', ':tabclose<CR>')
 key.set('n', '<leader>tn', ':tabn<CR>')
 key.set('n', '<leader>tp', ':tabp<Cr>')
+
+-- plugin keymaps
+
+-- vim-maximizer
+key.set('n', '<leader>sm', ':MaximizerToggle<CR>')
